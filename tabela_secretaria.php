@@ -1,6 +1,6 @@
 ﻿
 
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Consulta secretaria</title>
@@ -9,7 +9,7 @@
       body{background:#ffffff;}
    </style>
 </head>
- 
+
 <body>
 	<!-- TABELA PRINCIPAL -->
 	<table cellspacing="0" align="center" width="800px" bgcolor="#ffffff"><tr><td>
@@ -76,7 +76,7 @@
 					<a href="tabela_medico.php">Médicos</a></td></tr>
 
 				<tr><td bgcolor="#3b5898" align="center">
-					<a href="tabela_secretaria.php">Secretárias</a></td></tr>					
+					<a href="tabela_secretaria.php">Secretárias</a></td></tr>
 				</table>
          </td>
 			<td>
@@ -85,18 +85,19 @@
 
 <?php
 
-include ("bdfunc.php");
-  
-//prepara uma tabela. cabecalho primeiro
-  echo "<table border='5' cellpadding='4' align='center' bgcolor='BLACK'>".
-			"<tr align='center' bgcolor='#EAEAEA'>".
-				"<td colspan='2'><b>Secretárias</b></td>".
-			"</tr>".
-			"<tr align='center' bgcolor='#EAEAEA'>".
-				"<td><b>ID</b></td>".
-				"<td><b>Nome</b></td>".
-			"</tr>";
+include ("bdfunc.php"); ?>
 
+//prepara uma tabela. cabecalho primeiro
+  <table border='5' cellpadding='4' align='center' bgcolor='BLACK'>
+			<tr align='center' bgcolor='#EAEAEA'>
+				<td colspan='2'><b>Secretárias</b></td>
+			</tr>
+			<tr align='center' bgcolor='#EAEAEA'>
+				<td><b>ID</b></td>
+				<td><b>Nome</b></td>
+			</tr>
+
+<?php
   $conexao = conecta("Man12", "userman12", "userman12");
 
   // executa uma busca por dados
