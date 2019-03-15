@@ -1,0 +1,90 @@
+
+body{
+   background:#dddddd;
+   margin-left:10px;
+   margin-right:10px; 
+
+   font-family:Calibri,Arial,sans-serif;
+   font-size:15px;
+   color:Black;
+}
+
+@font-face{
+   font-family: Manuscrita;
+   src: url(renaissance.ttf);
+}
+
+div.titulo{
+   font-family: Manuscrita;
+   font-size:81px;
+}
+
+div.logo{
+   background-image:url("logo.png");
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: 90px;
+}
+
+div.login{
+   text-align:right;
+}
+
+div.rolagem{
+   height:400px;
+   width:600px;
+   overflow:scroll;
+}
+
+pre.subtitle{
+   color:black;
+   font-family:Calibri,Arial,sans-serif;
+}
+
+big{
+   color:black;
+}
+
+h1.title{
+   font-family:Calibri,Arial,sans-serif;
+   background-color:transparent;
+   color:rgb(153, 0, 0);
+   text-align:center;
+   font-size:50px;
+}
+
+div.colunas{
+   column-count:3;
+   column-gap:50px;
+
+   /* Firefox */
+   -moz-column-count:3;
+   -moz-column-gap:50px;
+
+   /* Safari and Chrome */
+   -webkit-column-count:3;
+   -webkit-column-gap:50px;
+}
+
+
+a:link
+{
+
+   font-weight:normal;
+   color:white;
+}
+
+a:visited
+{
+
+   font-weight:normal;
+   color:white;
+
+}
+
+a:hover
+{
+
+   font-weight:bold;
+   color:#bfbfbf;
+}

@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+ 
+<html>
+<head>
+	<title>Login</title>
+   <link rel="stylesheet" type="text/css" href="tema1.css">
+   <style>
+      body{background:#ffffff;}
+   </style>
+</head>
+ 
+<body>
+	<!-- TABELA PRINCIPAL -->
+	<table cellspacing="0" align="center" width="800px" bgcolor="#ffffff"><tr><td>
+
+
+		<!-- CABEÇALHO -->
+		<table cellspacing="1" cellpadding="7" width="100%" bgcolor="#90ee90">
+			<!-- Linha com logo, slogan e nome do site-->
+			<tr>
+				<td rowspan="2" align="right" width="20%">
+					<img src="logo.png" width="80px">
+				</td>
+          	<td align="right" valign="top">
+					<form action="usuario.php" method="POST"><div class="login">
+      			Usuário <input type="text" name="string_user" maxlength="17">
+      			Senha <input type="password" name="pass" size="10" maxlength="10">
+      			<input type="submit" name="botaologin" value="LOGIN"></div> 
+   				</form>
+				</td>
+			</tr>
+			<tr>
+				<td align="center"><img src="nome.png" width="95%"</td>
+			</tr>
+		</table>
+
+
+		<!-- Linha com links de navegação -->
+		<table cellpadding="5" cellspacing="4" width="100%" border="0	" bgcolor="#e6e6fa">
+			<tr align="center">
+				<td bgcolor="#3b5898" width="12%"><a href="home_login.html">Início</a></td>
+				<td bgcolor="#3b5898" width="12%"><a href="conheca.html">Conheça </a></td>
+				<td bgcolor="#3b5898" width="12%"><a href="planos.html">Planos</a></td>
+				<td bgcolor="#3b5898" width="12%"><a href="exames.html">Exames</a></td>
+				<td bgcolor="#3b5898" width="12%"><a href="contato.html">Contato</a></td>
+				<td> </td>
+			</tr>
+		</table>
+
+
+		<!-- CORPO DO SITE  E MENU DO SITE-->
+		<table cellpadding="15" width="100%" align="left" bgcolor="#ffffff">
+		<colgroup>
+  			<col width="20%">
+         <col width="70%">
+         <col width="10%">
+		</colgroup>
+
+		<tr>
+			<td valign="top" bgcolor="#90ee90">
+
+				<!--coluna esquerda-->
+				<table align="center" width="100%" cellspacing="7">
+				<!--<tr><td bgcolor="#3b5898" align="center">-->
+				</table>
+         </td>
+			<td>
+
+<!--coluna central-->
+<table align="center"  border="5" cellspacing="0" bgcolor="#bfbfbf">
+   <tr><th align='center' valign="top">Criar conta</th></tr>
+   <tr><td>
+   <form name="acrescenta" method="POST" action="inserir_usuario.php">
+
+		<fieldset>
+	 		<legend>Dados de Login</legend>
+			<table cellspacing="10">
+				<tr>
+					<td><label for="email">E-mail </label></td>
+					<td colspan="2"><input type="text" name="string_email" size="20" maxlength="20">@ppth.com</td>
+				</tr>
+				<tr>
+					<td><label for="string_usuario">Usuário </label></td>
+					<td colspan="2"><input type="text" name="string_usuario" size="30" maxlength="17"></td>
+				</tr>
+				<tr>
+					<td><label for="pass">Senha </label></td>
+					<td><input type="password" name="pass" size="15" maxlength="10"></td>
+				</tr>
+				<tr>
+					<td><label for="passconfirm">Confirme a senha </label></td>
+					<td><input type="password" name="passconfirm" size="15" maxlength="10"></td>
+				</tr>
+				<tr>
+					<td rowspan="2">
+						<select name="string_cargo">
+							<option value="secretária">secretária</option>
+							<option value="médico">médico</option>
+						</select>
+					</td>
+				</tr>
+			</table>	 		
+		</fieldset>
+			<table align="center" width="100%" border="1">
+				<tr>
+<!--					<td align="left"><input type="checkbox" value="Li" name="ticaoconta"></td>
+					<td>Li e e aceito os termos de politica e privacidade</td>      -->
+					<td align="center" width="40%"><input type="submit" value="Criar" name="botaoconta"></td>
+				</tr>
+			</table>
+
+	</form>
+	</td></tr>
+</table>
+<!--fim coluna central-->
+			</td>
+
+<!--coluna direita-->
+<!--			<td bgcolor="#90ee90"></td>      -->
+
+
+
+		</tr>
+	</table>
+	<!-- RODAPÉ DO SITE-->
+	<table align="center">
+		<tr>
+			<td>
+				<br><br><br>
+			</td>
+		</tr>
+	</table>
+   </td></tr></table>
+</body>
+
+</html>
