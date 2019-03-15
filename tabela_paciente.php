@@ -1,6 +1,6 @@
 ﻿
 
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Consulta paciente</title>
@@ -9,7 +9,7 @@
       body{background:#ffffff;}
    </style>
 </head>
- 
+
 <body>
 	<!-- TABELA PRINCIPAL -->
 	<table cellspacing="0" align="center" width="800px" bgcolor="#ffffff"><tr><td>
@@ -85,29 +85,31 @@
 
 <?php
 
-include ("bdfunc.php"); 
+include ("bdfunc.php");
 //prepara uma tabela. cabecalho primeiro
-  echo"<div class='rolagem'>". 
-		"<table width='1000' border='5' cellpadding='4' align='center' bgcolor='BLACK'>".
-			"<tr align='center' bgcolor='#EAEAEA'>".
-				"<td colspan='9'><b>Pacientes</b></td>".
-			"</tr>".
-			"<tr align='center' bgcolor='#EAEAEA'>".
-				"<td>SUS</td>".
-				"<td>Nome</td>".
-				"<td>Sobrenome</td>".
-				"<td>Idade</td>".
-				"<td>Sexo</td>".
-				"<td>Rua</td>".
-				"<td>nCasa</td>".
-				"<td>telefone1</td>".
-				"<td>telefone2</td>".
-			"</tr>";
+?>
+  <div class='rolagem'>
+		<table width='1000' border='5' cellpadding='4' align='center' bgcolor='BLACK'>
+			<tr align='center' bgcolor='#EAEAEA'>
+				<td colspan='9'><b>Pacientes</b></td>
+			</tr>
+			<tr align='center' bgcolor='#EAEAEA'>
+				<td>SUS</td>
+				<td>Nome</td>
+				<td>Sobrenome</td>
+				<td>Idade</td>
+				<td>Sexo</td>
+				<td>Rua</td>
+				<td>nCasa</td>
+				<td>telefone1</td>
+				<td>telefone2</td>
+			</tr>
 
+<?php
 $conexao = conecta("Man12", "userman12", "userman12");
 
 // executa uma busca por dados
-$cadeia = "SELECT nsus,pnome,unome,idade,sexo,rua,num_casa,fone,fone2 FROM paciente,telefone 
+$cadeia = "SELECT nsus,pnome,unome,idade,sexo,rua,num_casa,fone,fone2 FROM paciente,telefone
 WHERE nsus = nsus_paciente ORDER BY pnome;";
 $resultado = consulta($conexao, "$cadeia");
 $linhas = pg_numrows($resultado);
