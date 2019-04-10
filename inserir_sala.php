@@ -18,14 +18,14 @@
 		exit();
 		}
 
-  
+
     $conexao = conecta("Man12", "userman12", "userman12");
 
     $cadeia = "INSERT INTO sala (numero,nome_sala) VALUES($Numero,'$Nome');";
 
     $resultado = consulta($conexao, "$cadeia");
 
-    if ($resultado){
+     if ($resultado){
       echo "Operação realizada!";
     }
     else{
