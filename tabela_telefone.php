@@ -11,7 +11,7 @@
    <div class="corpo"><h2 align='center'>Telefones</h2>
 
 <?php
-  include ("bdfunc.php");
+  include ("bdfunc.php"); //nao aborta se der erro
   
 
   //prepara uma tabela. cabecalho primeiro

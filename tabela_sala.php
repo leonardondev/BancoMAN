@@ -85,7 +85,7 @@
 
 <?php
 
-include ("bdfunc.php");
+include ("bdfunc.php"); //nao aborta se der erro
 
 //prepara uma tabela. cabecalho primeiro
 ?>
