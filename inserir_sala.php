@@ -7,7 +7,7 @@
 
 <?php
 	require("bdfunc.php");
-  
+
 	if (isset($_POST['botaocadastrar'])) {
 		$Numero = (int)$_POST['string_n'];
 		$Nome = $_POST['string_nome'];
@@ -17,6 +17,7 @@
 		echo "NÃO FOI PREENCHIDO TODOS OS CAMPOS OBRIGATÓRIOS.";
 		exit();
 		}
+
   
     $conexao = conecta("Man12", "userman12", "userman12");
 
@@ -27,7 +28,7 @@
     if ($resultado){
       echo "Operação realizada!";
     }
-    else{ 
+    else{
       echo "Não deu certo!";
     }
     desconecta($conexao);
