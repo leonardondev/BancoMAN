@@ -83,7 +83,7 @@
 
 <!--coluna central-->
 <?php 
-include ("bdfunc.php");
+include ("bdfunc.php"); //nao aborta se der erro
 $conexao = conecta("Man12", "userman12", "userman12");
 $cadeia = "SELECT numero,nome_sala FROM sala ORDER BY numero";
 $resultado = consulta($conexao, "$cadeia");
